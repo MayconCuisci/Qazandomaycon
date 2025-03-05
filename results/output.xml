@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.2.2 (Python 3.13.1 on win32)" generated="2025-03-05T15:39:40.642430" rpa="false" schemaversion="5">
+<robot generator="Robot 7.2.2 (Python 3.13.1 on win32)" generated="2025-03-05T16:47:46.071753" rpa="false" schemaversion="5">
 <suite id="s1" name="Qazando" source="C:\Workspace\Qazando">
 <suite id="s1-s1" name="Tests" source="C:\Workspace\Qazando\Tests">
 <suite id="s1-s1-s1" name="Suites" source="C:\Workspace\Qazando\Tests\Suites">
@@ -7,49 +7,203 @@
 <test id="s1-s1-s1-s1-t1" name="Cenário de teste 01: Validando Home Page" line="12">
 <kw name="Abrir navegador" owner="Hooks" type="SETUP">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2025-03-05T15:39:40.960786" level="FAIL">Variable '${URL}' not found.</msg>
+<msg time="2025-03-05T16:47:46.427730" level="INFO">Opening browser 'chrome' to base url 'https://automationpratice.com.br/'.</msg>
 <arg>${URL}</arg>
 <arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="FAIL" start="2025-03-05T15:39:40.960233" elapsed="0.000807">Variable '${URL}' not found.</status>
+<status status="PASS" start="2025-03-05T16:47:46.426776" elapsed="7.448109"/>
 </kw>
-<status status="FAIL" start="2025-03-05T15:39:40.959204" elapsed="0.002016">Variable '${URL}' not found.</status>
+<status status="PASS" start="2025-03-05T16:47:46.425735" elapsed="7.449531"/>
+</kw>
+<kw name="Deve conter o title title do site Site" owner="Page_cadastro_cliente">
+<kw name="Title Should Be" owner="SeleniumLibrary">
+<msg time="2025-03-05T16:47:53.882679" level="INFO">Page title is 'QAZANDO Shop E-Commerce'.</msg>
+<arg>QAZANDO Shop E-Commerce</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<status status="PASS" start="2025-03-05T16:47:53.876338" elapsed="0.006704"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-03-05T16:47:56.884097" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-03-05T16:47:53.883259" elapsed="3.001129"/>
+</kw>
+<status status="PASS" start="2025-03-05T16:47:53.875811" elapsed="3.008757"/>
 </kw>
 <kw name="Fechar navegador" owner="Hooks" type="TEARDOWN">
 <kw name="Close Browser" owner="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2025-03-05T15:39:40.962536" elapsed="0.000344"/>
+<status status="PASS" start="2025-03-05T16:47:56.885860" elapsed="4.158062"/>
 </kw>
-<status status="PASS" start="2025-03-05T15:39:40.961912" elapsed="0.001097"/>
+<status status="PASS" start="2025-03-05T16:47:56.885190" elapsed="4.159017"/>
 </kw>
 <tag>Validar_title_da_page</tag>
-<status status="FAIL" start="2025-03-05T15:39:40.957787" elapsed="0.005485">Setup failed:
-Variable '${URL}' not found.</status>
+<status status="PASS" start="2025-03-05T16:47:46.424420" elapsed="14.620082"/>
+</test>
+<test id="s1-s1-s1-s1-t2" name="Cenário de teste 02: Cadastrando usuário com dados validos" line="16">
+<kw name="Abrir navegador" owner="Hooks" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-03-05T16:48:01.047418" level="INFO">Opening browser 'chrome' to base url 'https://automationpratice.com.br/'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-03-05T16:48:01.047080" elapsed="3.444797"/>
+</kw>
+<status status="PASS" start="2025-03-05T16:48:01.046640" elapsed="3.445523"/>
+</kw>
+<kw name="Deve conter o title title do site Site" owner="Page_cadastro_cliente">
+<kw name="Title Should Be" owner="SeleniumLibrary">
+<msg time="2025-03-05T16:48:04.499738" level="INFO">Page title is 'QAZANDO Shop E-Commerce'.</msg>
+<arg>QAZANDO Shop E-Commerce</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<status status="PASS" start="2025-03-05T16:48:04.493370" elapsed="0.006678"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-03-05T16:48:07.500932" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-03-05T16:48:04.500275" elapsed="3.001150"/>
+</kw>
+<status status="PASS" start="2025-03-05T16:48:04.492686" elapsed="3.008979"/>
+</kw>
+<kw name="Aguardar o elemento de texto clicavel esteja visível" owner="Page_cadastro_cliente">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath=//*[@id="top_header"]/div/div/div[2]/div/ul/li[2]/a</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-03-05T16:48:07.502798" elapsed="0.031427"/>
+</kw>
+<status status="PASS" start="2025-03-05T16:48:07.502184" elapsed="0.032569"/>
+</kw>
+<kw name="Deve poder clicar no texto clicavel {cadastro}" owner="Page_cadastro_cliente">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-03-05T16:48:07.536117" level="INFO">Clicking element 'xpath=//*[@id="top_header"]/div/div/div[2]/div/ul/li[2]/a'.</msg>
+<arg>xpath=//*[@id="top_header"]/div/div/div[2]/div/ul/li[2]/a</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-03-05T16:48:07.535825" elapsed="0.072471"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-03-05T16:48:10.609444" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-03-05T16:48:07.608541" elapsed="3.001790"/>
+</kw>
+<status status="PASS" start="2025-03-05T16:48:07.535370" elapsed="3.075431"/>
+</kw>
+<kw name="Validando se a tela é a correta Titulo da tela cadastro_de_usuario" owner="Page_cadastro_cliente">
+<kw name="Wait Until Element Contains" owner="SeleniumLibrary">
+<arg>xpath=//*[@id="login_area"]/div/div/div/div/h3</arg>
+<arg>Cadastro de usuário</arg>
+<doc>Waits until the element ``locator`` contains ``text``.</doc>
+<status status="PASS" start="2025-03-05T16:48:10.613235" elapsed="0.039002"/>
+</kw>
+<status status="PASS" start="2025-03-05T16:48:10.611939" elapsed="0.040629"/>
+</kw>
+<kw name="Aguardar o elemento do campo Nome ficar visível" owner="Page_cadastro_cliente">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath=//*[@id="user"]</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-03-05T16:48:10.654320" elapsed="0.025236"/>
+</kw>
+<status status="PASS" start="2025-03-05T16:48:10.653397" elapsed="0.026327"/>
+</kw>
+<kw name="Deve poder digitar no campo Nome" owner="Page_cadastro_cliente">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-03-05T16:48:10.680750" level="INFO">Typing text 'Automação' into text field 'xpath=//*[@id="user"]'.</msg>
+<arg>xpath=//*[@id="user"]</arg>
+<arg>Automação</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-03-05T16:48:10.680482" elapsed="0.093772"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-03-05T16:48:13.775295" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-03-05T16:48:10.774468" elapsed="3.001404"/>
+</kw>
+<status status="PASS" start="2025-03-05T16:48:10.680059" elapsed="3.096153"/>
+</kw>
+<kw name="Deve poder digitar no campo E-mail" owner="Page_cadastro_cliente">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath=//*[@id="email"]</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-03-05T16:48:13.778249" elapsed="0.027606"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-03-05T16:48:13.806811" level="INFO">Typing text 'mayconc@yopmail.com' into text field 'xpath=//*[@id="email"]'.</msg>
+<arg>xpath=//*[@id="email"]</arg>
+<arg>mayconc@yopmail.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-03-05T16:48:13.806208" elapsed="0.073410"/>
+</kw>
+<status status="PASS" start="2025-03-05T16:48:13.777280" elapsed="0.102614"/>
+</kw>
+<kw name="Deve poder digitar no campo Senha" owner="Page_cadastro_cliente">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-03-05T16:48:13.881105" level="INFO">Typing text 'Maycon@123' into text field 'xpath=//*[@id="password"]'.</msg>
+<arg>xpath=//*[@id="password"]</arg>
+<arg>Maycon@123</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-03-05T16:48:13.880822" elapsed="0.070515"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath=//*[@id="btnRegister"]</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-03-05T16:48:13.951551" elapsed="0.014796"/>
+</kw>
+<status status="PASS" start="2025-03-05T16:48:13.880313" elapsed="0.086284"/>
+</kw>
+<kw name="Deve poder clicar no botão {cadastrar}" owner="Page_cadastro_cliente">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-03-05T16:48:13.967949" level="INFO">Clicking button 'xpath=//*[@id="btnRegister"]'.</msg>
+<arg>xpath=//*[@id="btnRegister"]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-03-05T16:48:13.967670" elapsed="0.075527"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-03-05T16:48:19.045801" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-03-05T16:48:14.044385" elapsed="5.002014"/>
+</kw>
+<status status="PASS" start="2025-03-05T16:48:13.967214" elapsed="5.079534"/>
+</kw>
+<kw name="Fechar navegador" owner="Hooks" type="TEARDOWN">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-03-05T16:48:19.049116" elapsed="2.595277"/>
+</kw>
+<status status="PASS" start="2025-03-05T16:48:19.047904" elapsed="2.597066"/>
+</kw>
+<tag>Cadastro_usuario_dados_validos</tag>
+<status status="PASS" start="2025-03-05T16:48:01.045735" elapsed="20.599932"/>
 </test>
 <doc>Aqui ficarão os steps da aplicação bla bla bla</doc>
-<status status="FAIL" start="2025-03-05T15:39:40.677043" elapsed="0.287410"/>
+<status status="PASS" start="2025-03-05T16:47:46.109195" elapsed="35.540193"/>
 </suite>
-<status status="FAIL" start="2025-03-05T15:39:40.674657" elapsed="0.291545"/>
+<status status="PASS" start="2025-03-05T16:47:46.106360" elapsed="35.546021"/>
 </suite>
-<status status="FAIL" start="2025-03-05T15:39:40.671952" elapsed="0.295681"/>
+<status status="PASS" start="2025-03-05T16:47:46.103884" elapsed="35.550628"/>
 </suite>
-<status status="FAIL" start="2025-03-05T15:39:40.652579" elapsed="0.316520"/>
+<status status="PASS" start="2025-03-05T16:47:46.077773" elapsed="35.578110"/>
 </suite>
 <statistics>
 <total>
-<stat pass="0" fail="1" skip="0">All Tests</stat>
+<stat pass="2" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
-<stat pass="0" fail="1" skip="0">Validar_title_da_page</stat>
+<stat pass="1" fail="0" skip="0">Cadastro_usuario_dados_validos</stat>
+<stat pass="1" fail="0" skip="0">Validar_title_da_page</stat>
 </tag>
 <suite>
-<stat name="Qazando" id="s1" pass="0" fail="1" skip="0">Qazando</stat>
-<stat name="Tests" id="s1-s1" pass="0" fail="1" skip="0">Qazando.Tests</stat>
-<stat name="Suites" id="s1-s1-s1" pass="0" fail="1" skip="0">Qazando.Tests.Suites</stat>
-<stat name="Test cadastro cliente" id="s1-s1-s1-s1" pass="0" fail="1" skip="0">Qazando.Tests.Suites.Test cadastro cliente</stat>
+<stat name="Qazando" id="s1" pass="2" fail="0" skip="0">Qazando</stat>
+<stat name="Tests" id="s1-s1" pass="2" fail="0" skip="0">Qazando.Tests</stat>
+<stat name="Suites" id="s1-s1-s1" pass="2" fail="0" skip="0">Qazando.Tests.Suites</stat>
+<stat name="Test cadastro cliente" id="s1-s1-s1-s1" pass="2" fail="0" skip="0">Qazando.Tests.Suites.Test cadastro cliente</stat>
 </suite>
 </statistics>
 <errors>
-<msg time="2025-03-05T15:39:40.953998" level="ERROR">Error in file 'C:\Workspace\Qazando\Src\Configs\Hooks.resource' on line 6: Resource file '..\Auto\Variables\Var_globals.resource' does not exist.</msg>
 </errors>
 </robot>
