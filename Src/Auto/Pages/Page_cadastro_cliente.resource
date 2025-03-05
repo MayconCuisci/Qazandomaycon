@@ -25,3 +25,15 @@ Deve poder digitar no campo Nome
     Input Text    xpath=//*[@id="user"]    Automação
     Sleep    3s
 
+Deve poder digitar no campo E-mail
+    Wait Until Element Is Visible  xpath=//*[@id="email"]    10s
+    Input Text    xpath=//*[@id="email"]    mayconc@yopmail.com
+
+Deve poder digitar no campo Senha
+    Input Text    xpath=//*[@id="password"]    Maycon@123    
+    Wait Until Element Is Visible  xpath=//*[@id="btnRegister"]
+
+Deve poder clicar no botão {cadastrar}
+    Click Button     xpath=//*[@id="btnRegister"]
+    Sleep    5s
+    

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.2.2 (Python 3.13.1 on win32)" generated="2025-03-05T15:39:40.642430" rpa="false" schemaversion="5">
+<suite id="s1" name="Qazando" source="C:\Workspace\Qazando">
+<suite id="s1-s1" name="Tests" source="C:\Workspace\Qazando\Tests">
+<suite id="s1-s1-s1" name="Suites" source="C:\Workspace\Qazando\Tests\Suites">
+<suite id="s1-s1-s1-s1" name="Test cadastro cliente" source="C:\Workspace\Qazando\Tests\Suites\Test_cadastro_cliente.robot">
+<test id="s1-s1-s1-s1-t1" name="Cenário de teste 01: Validando Home Page" line="12">
+<kw name="Abrir navegador" owner="Hooks" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-03-05T15:39:40.960786" level="FAIL">Variable '${URL}' not found.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="FAIL" start="2025-03-05T15:39:40.960233" elapsed="0.000807">Variable '${URL}' not found.</status>
+</kw>
+<status status="FAIL" start="2025-03-05T15:39:40.959204" elapsed="0.002016">Variable '${URL}' not found.</status>
+</kw>
+<kw name="Fechar navegador" owner="Hooks" type="TEARDOWN">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-03-05T15:39:40.962536" elapsed="0.000344"/>
+</kw>
+<status status="PASS" start="2025-03-05T15:39:40.961912" elapsed="0.001097"/>
+</kw>
+<tag>Validar_title_da_page</tag>
+<status status="FAIL" start="2025-03-05T15:39:40.957787" elapsed="0.005485">Setup failed:
+Variable '${URL}' not found.</status>
+</test>
+<doc>Aqui ficarão os steps da aplicação bla bla bla</doc>
+<status status="FAIL" start="2025-03-05T15:39:40.677043" elapsed="0.287410"/>
+</suite>
+<status status="FAIL" start="2025-03-05T15:39:40.674657" elapsed="0.291545"/>
+</suite>
+<status status="FAIL" start="2025-03-05T15:39:40.671952" elapsed="0.295681"/>
+</suite>
+<status status="FAIL" start="2025-03-05T15:39:40.652579" elapsed="0.316520"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="0" fail="1" skip="0">Validar_title_da_page</stat>
+</tag>
+<suite>
+<stat name="Qazando" id="s1" pass="0" fail="1" skip="0">Qazando</stat>
+<stat name="Tests" id="s1-s1" pass="0" fail="1" skip="0">Qazando.Tests</stat>
+<stat name="Suites" id="s1-s1-s1" pass="0" fail="1" skip="0">Qazando.Tests.Suites</stat>
+<stat name="Test cadastro cliente" id="s1-s1-s1-s1" pass="0" fail="1" skip="0">Qazando.Tests.Suites.Test cadastro cliente</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2025-03-05T15:39:40.953998" level="ERROR">Error in file 'C:\Workspace\Qazando\Src\Configs\Hooks.resource' on line 6: Resource file '..\Auto\Variables\Var_globals.resource' does not exist.</msg>
+</errors>
+</robot>

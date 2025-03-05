@@ -20,8 +20,7 @@ Cenário de teste 02: Cadastrando usuário com dados validos
 	Deve poder clicar no texto clicavel {cadastro}
 	Validando se a tela é a correta Titulo da tela cadastro_de_usuario
 	Aguardar o elemento do campo Nome ficar visível
-	Deve poder digitar no campo Nome
-	# Deve poder digitar no campo E-mail
-	# Deve poder digitar no campo Senha
-	# Deve poder clicar no botão {cadastrar}
-	# Deve validar o sucesso do cadastro
+    Deve poder digitar no campo Nome
+	Deve poder digitar no campo E-mail
+	Deve poder digitar no campo Senha
+	Deve poder clicar no botão {cadastrar}
